@@ -27,7 +27,7 @@ HTML , CSS , JavaScript , Json
 git clone https://github.com/PouyaAzhkan/Ninja-Arashi-2
 
 # went to Folder
-cd DigiMovies
+cd ninjaArashi2
 
 # open Index.html
 Open File index.html
