@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: andalus;
+    cursor: url(../assets/img/mouse/default.png), auto !important;
+    background-color: #000;
+}
+
+@font-face {
+    font-family: "andalus";
+    src: url(../assets/fonts/Andalus.ttf);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.disable {
+    filter: grayscale(100%);
+}
+
+.scale {
+    transition: 0.1s !important;
+    cursor: url(../assets/img/mouse/pointer.png), auto !important;
+}
+
+.scale:hover {
+    transform: scale(1.03) !important;
+}
+
+/* ---------- game scene ---------- */
+#gameScene {
+    width: 90%;
+    height: 95vh;
+    margin: 0 auto;
+    margin-top: 2.5vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#gameScene>#introScene {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    align-items: center;
+    justify-content: end;
+    background-size: 100% 100%;
+    background-image: url(../assets/img/scenes/introNoPlay.png);
+}
+
+#gameScene>#introScene>#play {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+
+    width: 250px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    background-size: 100% 100%;
+    background-image: url(../assets/img/scenes/play.png);
+}
+
+#gameScene>#introVideoHolder {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    position: absolute;
+    background-color: #000;
+}
+
+#gameScene>#introVideoHolder>#introVideo {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#gameScene>#introVideoHolder>.skip {
+    position: absolute;
+    top: 95%;
+    left: 18%;
+    font-weight: bold;
+    font-size: 25px;
+    color: #374a56;
+    transition: 0.5s;
+    transform: translate(-50%, -50%);
+    animation: skipAnim 5s linear infinite;
+}
+
+/* ---------- game scene end ---------- */

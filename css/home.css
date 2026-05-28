@@ -1,0 +1,427 @@
+/* ---------- home ---------- */
+#gameScene>#home {
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   /* position: absolute; */
+   position: relative;
+   background-size: 100% 100%;
+   animation: homeGif 1s linear infinite;
+
+   box-sizing: border-box;
+}
+
+#gameScene>#home>div {
+   box-sizing: border-box;
+}
+
+#gameScene>#home>#homeBtn {
+   position: absolute;
+   width: 8%;
+   height: 7%;
+   right: 0;
+   z-index: 999;
+   margin-top: 5px;
+   cursor: url(../assets/img/mouse/pointer.png), auto !important;
+   background: url(../assets/img/home/homeBtn.png);
+   background-size: 100% 100%;
+}
+
+#gameScene>#home>.home-menu {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 92%;
+   position: absolute;
+   /* transform: translate(-50%, -50%); */
+}
+
+/* top */
+#gameScene>#home>.top {
+   width: 100%;
+   height: 8%;
+   display: flex;
+   align-items: center;
+   padding-left: 14%;
+}
+
+#gameScene>#home>.top>span {
+   color: #fff;
+   font-size: 18px;
+   user-select: none;
+}
+
+#gameScene>#home>.top>span.gem {
+   margin-left: 19%;
+}
+
+/* top end */
+
+/* left */
+#gameScene>#home>.left {
+   width: 17.5%;
+   height: 92%;
+   padding-top: 28px;
+   display: flex;
+   align-items: start;
+   flex-flow: column;
+   box-sizing: border-box;
+}
+
+#gameScene>#home>.left>div {
+   height: 10%;
+   width: 100%;
+}
+
+#gameScene>#home>.left>#homeSettingBtn {
+   background: url(../assets/img/home/seting.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#home>.left>#infoBtn {
+   margin-top: 8px;
+   background: url(../assets/img/home/info.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#home>.left>#rateUsBtn {
+   margin-top: 8px;
+   /* height: 8.5%; */
+   background: url(../assets/img/home/rateus.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+/* left end */
+
+/* right */
+#gameScene>#home>.right {
+   display: flex;
+   align-items: start;
+   flex-flow: row wrap;
+   width: 56%;
+   height: 82%;
+   padding-right: 4%;
+}
+
+#gameScene>#home>.right>div {
+   height: 21%;
+   width: 48.5%;
+}
+
+#gameScene>#home>.right>#storyBtn {
+   width: 100%;
+   height: 55%;
+   margin-top: 1%;
+   background: url(../assets/img/home/story.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#home>.right>#skillsBtn {
+   margin-left: 0.5%;
+   background: url(../assets/img/home/skills.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#home>.right>#shopBtn {
+   margin-left: 1%;
+   background: url(../assets/img/home/shop.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#home>.right>#artifactBtn {
+   margin-left: 0.5%;
+   background: url(../assets/img/home/artifact.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#home>.right>#challengeBtn {
+   margin-left: 1%;
+   background: url(../assets/img/home/challenge.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+/* setting */
+#gameScene>#home>#setting {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #00000081;
+}
+
+#gameScene>#home>#setting>#settingMenu {
+   width: 30%;
+   height: 85%;
+   background: url("../assets/img/home/settingMenu/settingMenu.png") no-repeat;
+   background-size: 100% 100%;
+
+   /* padding-top: 72px; */
+   box-sizing: border-box;
+}
+
+#gameScene>#home>#setting>#settingMenu>div {
+   width: 65%;
+   height: 13%;
+   margin: 0 auto;
+}
+
+#gameScene>#home>#setting>#settingMenu>#musicBtn {
+   background: url("../assets/img/home/settingMenu/musicOn.png") no-repeat;
+   background-size: 100% 100%;
+   margin-top: 65px;
+   width: 55%;
+}
+
+#gameScene>#home>#setting>#settingMenu>#resetBtn {
+   background: url("../assets/img/home/settingMenu/reset.png") no-repeat;
+   background-size: 100% 100%;
+   margin-top: 20px;
+}
+
+#gameScene>#home>#setting>#settingMenu>#addSetiingBtn {
+   background: url("../assets/img/home/settingMenu/adsSettting.png") no-repeat;
+   background-size: 100% 100%;
+   margin-top: 17px;
+}
+
+#gameScene>#home>#setting>#settingMenu>#privacyBtn {
+   background: url("../assets/img/home/settingMenu/privacy.png") no-repeat;
+   background-size: 100% 100%;
+   margin-top: 18px;
+}
+
+#gameScene>#home>#setting>#settingMenu>#closeBtn {
+   background: url("../assets/img/home/settingMenu/close.png") no-repeat;
+   background-size: 100% 100%;
+   margin-top: 37px;
+   height: 11%;
+   width: 50%;
+}
+
+/* setting end */
+
+/* info */
+#gameScene>#home>#info {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #00000081;
+}
+
+#gameScene>#home>#info>#infoMenu {
+   width: 60%;
+   height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: end;
+
+   background: url("../assets/img/home/infoMenu/infoMenu2.png") no-repeat;
+   background-size: 100% 100%;
+   box-sizing: border-box;
+}
+
+#gameScene>#home>#info>#infoMenu>#infoCloseBtn {
+   width: 27%;
+   height: 11%;
+   margin-bottom: 30px;
+   background: url("../assets/img/home/infoMenu/close.png") no-repeat;
+   background-size: 100% 100%;
+}
+
+/* info end */
+
+/* story */
+#gameScene>#home>#story {
+   height: 100%;
+   background: url(../assets/img/home/story/storyBgNew.png);
+   background-size: 100% 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#gameScene>#home>#story>.holder {
+   height: 77%;
+   width: 88%;
+   position: relative;
+   display: flex;
+   flex-flow: column;
+   justify-content: space-between;
+   box-sizing: border-box;
+}
+
+#gameScene>#home>#story>.holder>.btn-group {
+   height: 13%;
+   width: 100%;
+   left: 0;
+   top: 30%;
+   padding: 0 1.8%;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+   justify-content: space-between;
+
+}
+
+#gameScene>#home>#story>.holder>.btn-group>div {
+   height: 100%;
+   width: 3.5%;
+}
+
+#gameScene>#home>#story>.holder>.btn-group>#sliderBtnLeft {
+   background: url(../assets/img/home/story/leftBtn.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#home>#story>.holder>.btn-group>#sliderBtnRight {
+   background: url(../assets/img/home/story/rightBtn.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+/* top */
+#gameScene>#home>#story>.holder>.top {
+   width: 60%;
+   height: 8%;
+   top: -8%;
+   left: 4%;
+   box-sizing: border-box;
+   position: absolute;
+   /* border: 1px solid blue; */
+   display: flex;
+   align-items: end;
+   user-select: none;
+
+}
+
+#gameScene>#home>#story>.holder>.top>#act {
+   height: 100%;
+   width: 51%;
+   color: #fff;
+   font-size: 28px;
+   text-align: center;
+   background: url(../assets/img/home/story/act.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#home>#story>.holder>.top>#achievement {
+   color: #fff;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+   padding-left: 11%;
+
+   height: 80%;
+   width: 49%;
+   background: url(../assets/img/home/story/menu.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#home>#story>.holder>.top>#achievement>#gold {
+   margin-left: 44%;
+}
+
+/* top end */
+
+#gameScene>#home>#story>.holder>#imgSlider {
+   box-sizing: border-box;
+   width: 88%;
+   height: 64%;
+   margin: 0 auto;
+   margin-top: 17px;
+   overflow: hidden;
+}
+
+#gameScene>#home>#story>.holder>#imgSlider>#imgGallery {
+   width: 400%;
+   height: 100%;
+   position: relative;
+   left: 0;
+   transition: 0.5s;
+}
+
+#gameScene>#home>#story>.holder>#imgSlider>#imgGallery>.item {
+   width: 25%;
+   height: 100%;
+   float: left;
+}
+
+#gameScene>#home>#story>.holder>#imgSlider>#imgGallery>.item>img {
+   width: 100%;
+   height: 100%;
+}
+
+#gameScene>#home>#story>.holder>#levelSlider {
+   box-sizing: border-box;
+   width: 80%;
+   height: 30%;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+#gameScene>#home>#story>.holder>#levelSlider>#levelGallery {
+   width: 400%;
+   height: 100%;
+   position: relative;
+   left: 0;
+   transition: 0.5s;
+}
+
+#gameScene>#home>#story>.holder>#levelSlider>#levelGallery>.leve-list {
+   float: left;
+   width: 25%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#gameScene>#home>#story>.holder>#levelSlider>#levelGallery>.leve-list>.level-item {
+   width: 8%;
+   height: 50%;
+   background: url(../assets/img/home/story/lockLevel.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#home>#story>.holder>#levelSlider>#levelGallery>.leve-list>.level-item:hover {
+   transform: scale(1.1) !important;
+}
+
+#gameScene>#home>#story>.holder>#levelSlider>#levelGallery>.leve-list>.level-item.level1 {
+   width: 10%;
+   height: 60%;
+   background: url(../assets/img/home/story/level1.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+/* story end */
+
+/* artifact */
+#gameScene>#home>#artifact {
+   background: url("../assets/img/home/artifact/artifactBg.png") no-repeat;
+   background-size: 100% 100%;
+}
+
+/* artifact end */
+
+/* shop */
+#gameScene>#home>#shop {
+   background: url("../assets/img/home/shop/shopBg.png") no-repeat;
+   background-size: 100% 100%;
+}
+
+/* shop end */
+
+/* skills */
+#gameScene>#home>#skills {
+   background: url("../assets/img/home/skills/skillsBg.png") no-repeat;
+   background-size: 100% 100%;
+}
+
+/* skills end */
+
+/* ---------- home end ---------- */

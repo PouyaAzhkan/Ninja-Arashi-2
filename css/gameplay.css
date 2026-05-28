@@ -1,0 +1,362 @@
+/* ---------- gameplay ---------- */
+#gameScene>#gamePlay {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   box-sizing: border-box;
+   overflow: hidden;
+   /* overflow: scroll; */
+}
+
+#gameScene>#gamePlay>#hsProgress {
+   position: absolute;
+   width: 300px;
+   height: 20px;
+   display: flex;
+   padding: 0 2px;
+   align-items: center;
+   box-sizing: border-box;
+   border: 2px solid #a26c53;
+   background-color: #33221d;
+   margin: 0 auto;
+   top: 75%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+#gameScene>#gamePlay>#hsProgress>#hsBar {
+   height: 80%;
+   width: 100%;
+   transition: 0.1s;
+   background-color: #737c4d;
+}
+
+#gameScene>#gamePlay>.loading {
+   width: 100%;
+   height: 100%;
+   background: url("../assets/img/scenes/loadingGuide.png") no-repeat;
+   background-size: 100% 100%;
+   position: absolute;
+   z-index: 999;
+   left: 0;
+   display: flex;
+   justify-content: right;
+   padding: 15px;
+   box-sizing: border-box;
+}
+
+#gameScene>#gamePlay>.loading>.preLoader {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: 5px dotted #fff;
+   box-sizing: border-box;
+   transition: 0.5s;
+   animation: preLoaderAnim 5.5s linear;
+}
+
+/* play ground */
+#gameScene>#gamePlay>#playGround {
+   width: 100%;
+   height: 100%;
+   /* transition: 0.1s linear; */
+   position: relative;
+}
+
+#gameScene>#gamePlay>#playGround>#player {
+   width: 50px;
+   height: 66px;
+   position: absolute;
+   z-index: 20;
+   bottom: 45%;
+   left: 0;
+   margin-left: 13%;
+   background: url(../assets/img/gamePlay/player/walkRight/01.png);
+   background-size: contain;
+   box-sizing: border-box;
+}
+
+#gameScene>#gamePlay>#playGround>#player>#shuriken {
+   width: 25px;
+   height: 25px;
+   position: relative;
+   left: 20px;
+   background: url(../assets/img/gamePlay/actionButtons/shuriken.png) no-repeat;
+   background-size: contain;
+}
+
+#gameScene>#gamePlay>#playGround>#stage1>.star {
+   width: 30px;
+   height: 30px;
+   bottom: 47%;
+   /* left: 5%; */
+   position: absolute;
+   background: url(../assets/img/gamePlay/actionButtons/star.png) no-repeat;
+   background-size: contain;
+   /* transition: 0.3s linear; */
+   box-sizing: border-box;
+   animation: 0.8s starAnim linear infinite;
+}
+
+#gameScene>#gamePlay>#playGround>#stage1 {
+   width: 500%;
+   height: 100%;
+   transition: 0.3s linear;
+   background-image: url(../assets/img/gamePlay/playGround/playGrpund3.png);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   position: relative;
+   left: 0;
+}
+
+#gameScene>#gamePlay>#playGround>#stage1>#enemy1 {
+   width: 50px;
+   height: 66px;
+   bottom: 18%;
+   /* background: url(../assets/img/gamePlay/enemy/walk/02.png); */
+   background-size: 100% 100%;
+   position: absolute;
+}
+
+/* play ground end */
+
+/* game action buttons */
+#gameScene>#gamePlay>.gameActionBtn {
+   position: absolute;
+   z-index: 1;
+}
+
+#gameScene>#gamePlay>#playerInfo {
+   display: flex;
+   flex-flow: column;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 20px;
+   padding-bottom: 13px;
+   padding-left: 50px;
+   width: 230px;
+   height: 120px;
+   left: 1%;
+   top: 1%;
+   background: url(../assets/img/gamePlay/actionButtons/playerInfo.png) no-repeat;
+   background-size: 100% 100%;
+   box-sizing: border-box;
+   color: #fff;
+   user-select: none;
+}
+
+#gameScene>#gamePlay>#gameSettingBtn {
+   width: 60px;
+   height: 60px;
+   right: 1%;
+   top: 2%;
+   background: url(../assets/img/gamePlay/actionButtons/setting.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#gamePlay>#playerMove {
+   left: 6%;
+   bottom: 7%;
+   gap: 50px;
+   display: flex;
+   justify-content: space-between;
+}
+
+#gameScene>#gamePlay>#playerMove>div {
+   width: 130px;
+   height: 110px;
+}
+
+#gameScene>#gamePlay>#playerMove>#goLeft {
+   background: url(../assets/img/gamePlay/actionButtons/left.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#gamePlay>#playerMove>#goRight {
+   background: url(../assets/img/gamePlay/actionButtons/right.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#gamePlay>#playerActions {
+   right: 2%;
+   bottom: 1%;
+   display: flex;
+   flex-flow: row wrap;
+   width: 260px;
+   box-sizing: border-box;
+}
+
+#gameScene>#gamePlay>#playerActions>li {
+   width: 50px;
+   height: 50px;
+}
+
+#gameScene>#gamePlay>#playerActions>#hideShowBtn {
+   width: 70px;
+   height: 70px;
+   margin-left: 50px;
+   margin-top: 50px;
+   background: url(../assets/img/gamePlay/actionButtons/hideShow.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#gamePlay>#playerActions>#killBtn {
+   width: 90px;
+   height: 90px;
+   margin-left: 50px;
+   background: url(../assets/img/gamePlay/actionButtons/kill.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#gamePlay>#playerActions>#fastKillBtn {
+   width: 90px;
+   height: 90px;
+   margin-top: 75px;
+   background: url(../assets/img/gamePlay/actionButtons/fastKill.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#gamePlay>#playerActions>#jumpBtn {
+   width: 120px;
+   height: 120px;
+   margin-left: 20px;
+   background: url(../assets/img/gamePlay/actionButtons/jump.png) no-repeat;
+   background-size: 100% 100%;
+}
+
+/* game action buttons end */
+
+/* game setting menu */
+#gameScene>#gamePlay>#menuHolder {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.6);
+   background-size: 100% 100%;
+   position: absolute;
+   top: 0%;
+   z-index: 999;
+}
+
+#gameScene>#gamePlay>#menuHolder>#gameSettingMenu {
+   width: 28%;
+   height: 80%;
+   background: url("../assets/img/gamePlay/pauseMenu/pauseSettingMenu.png") no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#gamePlay>#menuHolder>#gameSettingMenu>.item {
+   width: 60%;
+   height: 10%;
+   margin: auto;
+   margin-top: 40px;
+}
+
+#gameScene>#gamePlay>#menuHolder>#gameSettingMenu>#resumeBtn {
+   background: url("../assets/img/gamePlay/pauseMenu/resume.png") no-repeat;
+   background-size: 100% 100%;
+   margin-top: 50px;
+}
+
+#gameScene>#gamePlay>#menuHolder>#gameSettingMenu>#restartBtn {
+   background: url("../assets/img/gamePlay/pauseMenu/restart.png") no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#gamePlay>#menuHolder>#gameSettingMenu>#gameMusicBtn {
+   background: url("../assets/img/gamePlay/pauseMenu/musicOn.png") no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#gamePlay>#menuHolder>#gameSettingMenu>#hideUiBtn {
+   background: url("../assets/img/gamePlay/pauseMenu/hide.png") no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#gamePlay>#menuHolder>#gameSettingMenu>#mainMenuBtn {
+   background: url("../assets/img/gamePlay/pauseMenu/mainMenu.png") no-repeat;
+   background-size: 100% 100%;
+}
+
+/* dead menu */
+
+#gameScene>#gamePlay>#menuHolder>#deadMenu {
+   display: flex;
+   flex-flow: column;
+   justify-content: right;
+   align-items: end;
+   padding-right: 2%;
+   width: 60%;
+   height: 70%;
+   background: url("../assets/img/gamePlay/deadMenu/deadMenu.png") no-repeat;
+   background-size: 100% 100%;
+   box-sizing: border-box;
+}
+
+#gameScene>#gamePlay>#menuHolder>#deadMenu>.item {
+   width: 25%;
+   height: 10%;
+   /* margin: auto; */
+}
+
+#gameScene>#gamePlay>#menuHolder>#deadMenu>#restartBtn2 {
+   background: url("../assets/img/gamePlay/deadMenu/restart.png") no-repeat;
+   background-size: 100% 100%;
+   margin-top: 150px;
+}
+
+#gameScene>#gamePlay>#menuHolder>#deadMenu>#mainMenuBtn2 {
+   background: url("../assets/img/gamePlay/deadMenu/mainMenu.png") no-repeat;
+   background-size: 100% 100%;
+   margin-top: 40px;
+}
+
+#gameScene>#gamePlay>#menuHolder>#deadMenu>#buyDiamonds {
+   background: url("../assets/img/gamePlay/deadMenu/buyDiamond.png") no-repeat;
+   background-size: 100% 100%;
+   margin-right: 50%;
+   margin-top: 100px;
+}
+
+/* finish menu */
+
+#gameScene>#gamePlay>#menuHolder>#finishMenu {
+   display: flex;
+   flex-flow: column;
+   justify-content: right;
+   align-items: end;
+   width: 60%;
+   height: 70%;
+   background: url("../assets/img/gamePlay/finishMenu/levelComplete1.png") no-repeat;
+   background-size: 100% 100%;
+   box-sizing: border-box;
+}
+
+#gameScene>#gamePlay>#menuHolder>#finishMenu>.item {
+   width: 25%;
+   height: 10%;
+   margin-top: 40px;
+   margin-right: 13%;
+}
+
+#gameScene>#gamePlay>#menuHolder>#finishMenu>#nextStageBtn {
+   background: url("../assets/img/gamePlay/finishMenu/nextStage.png") no-repeat;
+   background-size: 100% 100%;
+   margin-top: 150px;
+}
+
+#gameScene>#gamePlay>#menuHolder>#finishMenu>#restartBtn3 {
+   background: url("../assets/img/gamePlay/finishMenu/restart.png") no-repeat;
+   background-size: 100% 100%;
+}
+
+#gameScene>#gamePlay>#menuHolder>#finishMenu>#mainMenuBtn2 {
+   background: url("../assets/img/gamePlay/finishMenu/mainMenu.png") no-repeat;
+   background-size: 100% 100%;
+}
+
+/* game setting menu end */
+
+/* ---------- gameplay end ---------- */

@@ -1,0 +1,1114 @@
+/* skip text */
+@keyframes skipAnim {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+/* preloader */
+@keyframes preLoaderAnim {
+   0% {
+      transform: rotate(0);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+/* star anim */
+@keyframes starAnim {
+   0% {
+      transform: scale(1);
+   }
+
+   50% {
+      transform: scale(1.2);
+   }
+
+   100% {
+      transform: scale(1);
+   }
+}
+
+/* home moving background */
+@keyframes homeGif {
+   0% {
+      background-image: url(../assets/img/home/bacground/01.png);
+   }
+
+   10% {
+      background-image: url(../assets/img/home/bacground/02.png);
+   }
+
+   20% {
+      background-image: url(../assets/img/home/bacground/03.png);
+   }
+
+   30% {
+      background-image: url(../assets/img/home/bacground/04.png);
+   }
+
+   40% {
+      background-image: url(../assets/img/home/bacground/05.png);
+   }
+
+   50% {
+      background-image: url(../assets/img/home/bacground/06.png);
+   }
+
+   60% {
+      background-image: url(../assets/img/home/bacground/07.png);
+   }
+
+   80% {
+      background-image: url(../assets/img/home/bacground/08.png);
+   }
+
+   100% {
+      background-image: url(../assets/img/home/bacground/09.png);
+   }
+}
+
+/* game play ground background */
+@keyframes playGroundGif {
+   0% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/1.png);
+   }
+
+   10% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/2.png);
+   }
+
+   15% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/3.png);
+   }
+
+   20% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/4.png);
+   }
+
+   25% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/5.png);
+   }
+
+   30% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/6.png);
+   }
+
+   35% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/7.png);
+   }
+
+   40% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/8.png);
+   }
+
+   45% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/9.png);
+   }
+
+   50% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/10.png);
+   }
+
+   55% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/11.png);
+   }
+
+   60% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/12.png);
+   }
+
+   65% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/13.png);
+   }
+
+   70% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/14.png);
+   }
+
+   80% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/15.png);
+   }
+
+   90% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/16.png);
+   }
+
+   100% {
+      background-image: url(../assets/img/gamePlay/playGround/playGround2Gif/17.png);
+   }
+}
+
+/* player breath */
+.breath {
+   animation: breathAnim 1s linear infinite;
+}
+
+@keyframes breathAnim {
+   0% {
+      transform: scale(1.0);
+   }
+
+   50% {
+      transform: scale(1.05);
+
+   }
+
+   100% {
+      transform: scale(1.0);
+
+   }
+}
+
+/* player walk right */
+.walkRight {
+   animation: walkRightAnim 0.7s linear infinite;
+}
+
+@keyframes walkRightAnim {
+   0% {
+      background-image: url(../assets/img/gamePlay/player/walkRight/01.png);
+      background-size: 100% 100%;
+   }
+
+   10% {
+      background-image: url(../assets/img/gamePlay/player/walkRight/02.png);
+      background-size: 100% 100%;
+   }
+
+   20% {
+      background-image: url(../assets/img/gamePlay/player/walkRight/03.png);
+      background-size: 100% 100%;
+   }
+
+   30% {
+      background-image: url(../assets/img/gamePlay/player/walkRight/04.png);
+      background-size: 100% 100%;
+   }
+
+   40% {
+      background-image: url(../assets/img/gamePlay/player/walkRight/05.png);
+      background-size: 100% 100%;
+   }
+
+   50% {
+      background-image: url(../assets/img/gamePlay/player/walkRight/06.png);
+      background-size: 100% 100%;
+   }
+
+   60% {
+      background-image: url(../assets/img/gamePlay/player/walkRight/07.png);
+      background-size: 100% 100%;
+   }
+
+   70% {
+      background-image: url(../assets/img/gamePlay/player/walkRight/08.png);
+      background-size: 100% 100%;
+   }
+
+   80% {
+      background-image: url(../assets/img/gamePlay/player/walkRight/09.png);
+      background-size: 100% 100%;
+   }
+
+   90% {
+      background-image: url(../assets/img/gamePlay/player/walkRight/10.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background-image: url(../assets/img/gamePlay/player/walkRight/11.png);
+      background-size: 100% 100%;
+   }
+}
+
+/* player walk right */
+.walkLeft {
+   animation: walkLeftAnim 0.7s linear infinite;
+}
+
+@keyframes walkLeftAnim {
+   0% {
+      background-image: url(../assets/img/gamePlay/player/walkLeft/01.png);
+      background-size: 100% 100%;
+   }
+
+   10% {
+      background-image: url(../assets/img/gamePlay/player/walkLeft/02.png);
+      background-size: 100% 100%;
+   }
+
+   20% {
+      background-image: url(../assets/img/gamePlay/player/walkLeft/03.png);
+      background-size: 100% 100%;
+   }
+
+   30% {
+      background-image: url(../assets/img/gamePlay/player/walkLeft/04.png);
+      background-size: 100% 100%;
+   }
+
+   40% {
+      background-image: url(../assets/img/gamePlay/player/walkLeft/05.png);
+      background-size: 100% 100%;
+   }
+
+   50% {
+      background-image: url(../assets/img/gamePlay/player/walkLeft/06.png);
+      background-size: 100% 100%;
+   }
+
+   60% {
+      background-image: url(../assets/img/gamePlay/player/walkLeft/07.png);
+      background-size: 100% 100%;
+   }
+
+   70% {
+      background-image: url(../assets/img/gamePlay/player/walkLeft/08.png);
+      background-size: 100% 100%;
+   }
+
+   80% {
+      background-image: url(../assets/img/gamePlay/player/walkLeft/09.png);
+      background-size: 100% 100%;
+   }
+
+   90% {
+      background-image: url(../assets/img/gamePlay/player/walkLeft/10.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background-image: url(../assets/img/gamePlay/player/walkLeft/11.png);
+      background-size: 100% 100%;
+   }
+}
+
+/* ---------- jump ---------- */
+.jumpRight {
+   animation: jumpRightAnim 0.5s normal infinite,
+      jumpDelayAnim 0.5s normal infinite;
+}
+
+.jumpLeft {
+   animation: jumpLeftAnim 0.5s normal infinite,
+      jumpDelayAnim 0.5s normal infinite;
+}
+
+@keyframes jumpDelayAnim {
+   0% {
+      transform: translate(0px, 0px);
+   }
+
+   50% {
+      transform: translate(0px, -200px);
+   }
+
+   100% {
+      transform: translate(0px, 0px);
+   }
+}
+
+/* jump right anim */
+@keyframes jumpRightAnim {
+   0% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/01.png);
+      background-size: 100% 100%;
+   }
+
+   20% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/02.png);
+      background-size: 100% 100%;
+   }
+
+   25% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/03.png);
+      background-size: 100% 100%;
+   }
+
+   30% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/04.png);
+      background-size: 100% 100%;
+   }
+
+   35% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/05.png);
+      background-size: 100% 100%;
+   }
+
+   40% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/06.png);
+      background-size: 100% 100%;
+   }
+
+   45% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/07.png);
+      background-size: 100% 100%;
+   }
+
+   50% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/08.png);
+      background-size: 100% 100%;
+   }
+
+   55% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/09.png);
+      background-size: 100% 100%;
+   }
+
+   60% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/10.png);
+      background-size: 100% 100%;
+   }
+
+   65% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/11.png);
+      background-size: 100% 100%;
+   }
+
+   70% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/12.png);
+      background-size: 100% 100%;
+   }
+
+   75% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/13.png);
+      background-size: 100% 100%;
+   }
+
+   80% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/14.png);
+      background-size: 100% 100%;
+   }
+
+   85% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/15.png);
+      background-size: 100% 100%;
+   }
+
+   90% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/16.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background-image: url(../assets/img/gamePlay/player/jumpRight/17.png);
+      background-size: 100% 100%;
+   }
+}
+
+/* jumpleft anim */
+@keyframes jumpLeftAnim {
+   0% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/01.png);
+      background-size: 100% 100%;
+   }
+
+   20% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/02.png);
+      background-size: 100% 100%;
+   }
+
+   25% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/03.png);
+      background-size: 100% 100%;
+   }
+
+   30% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/04.png);
+      background-size: 100% 100%;
+   }
+
+   35% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/05.png);
+      background-size: 100% 100%;
+   }
+
+   40% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/06.png);
+      background-size: 100% 100%;
+   }
+
+   45% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/07.png);
+      background-size: 100% 100%;
+   }
+
+   50% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/08.png);
+      background-size: 100% 100%;
+   }
+
+   55% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/09.png);
+      background-size: 100% 100%;
+   }
+
+   60% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/10.png);
+      background-size: 100% 100%;
+   }
+
+   65% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/11.png);
+      background-size: 100% 100%;
+   }
+
+   70% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/12.png);
+      background-size: 100% 100%;
+   }
+
+   75% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/13.png);
+      background-size: 100% 100%;
+   }
+
+   80% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/14.png);
+      background-size: 100% 100%;
+   }
+
+   85% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/15.png);
+      background-size: 100% 100%;
+   }
+
+   90% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/16.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background-image: url(../assets/img/gamePlay/player/jumpLeft/17.png);
+      background-size: 100% 100%;
+   }
+}
+
+/* dead anim */
+.dead {
+   animation: deadAnim 1.5s linear infinite alternate-reverse;
+   transform: scale(1.2);
+   /* top: 44% !important; */
+}
+
+@keyframes deadAnim {
+   0% {
+      background-image: url(../assets/img/gamePlay/player/dead/1.png);
+      background-size: 100% 100%;
+   }
+
+   10% {
+      background-image: url(../assets/img/gamePlay/player/dead/2.png);
+      background-size: 100% 100%;
+   }
+
+   20% {
+      background-image: url(../assets/img/gamePlay/player/dead/3.png);
+      background-size: 100% 100%;
+   }
+
+   30% {
+      background-image: url(../assets/img/gamePlay/player/dead/4.png);
+      background-size: 100% 100%;
+   }
+
+   35% {
+      background-image: url(../assets/img/gamePlay/player/dead/5.png);
+      background-size: 100% 100%;
+   }
+
+   40% {
+      background-image: url(../assets/img/gamePlay/player/dead/6.png);
+      background-size: 100% 100%;
+   }
+
+   50% {
+      background-image: url(../assets/img/gamePlay/player/dead/7.png);
+      background-size: 100% 100%;
+   }
+
+   60% {
+      background-image: url(../assets/img/gamePlay/player/dead/8.png);
+      background-size: 100% 100%;
+   }
+
+   65% {
+      background-image: url(../assets/img/gamePlay/player/dead/9.png);
+      background-size: 100% 100%;
+   }
+
+   70% {
+      background-image: url(../assets/img/gamePlay/player/dead/10.png);
+      background-size: 100% 100%;
+   }
+
+   75% {
+      background-image: url(../assets/img/gamePlay/player/dead/11.png);
+      background-size: 100% 100%;
+   }
+
+   80% {
+      background-image: url(../assets/img/gamePlay/player/dead/12.png);
+      background-size: 100% 100%;
+   }
+
+   90% {
+      background-image: url(../assets/img/gamePlay/player/dead/13.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background-image: url(../assets/img/gamePlay/player/dead/14.png);
+      background-size: 100% 100%;
+   }
+
+}
+
+/*   player double jump  */
+.doubleJump {
+   animation: doubleJumpAnim 1s normal infinite,
+      doubleJumpDelayAnim 1s normal infinite;
+
+}
+
+@keyframes doubleJumpAnim {
+   0% {
+      background: url(../assets/img/gamePlay/player/doubleJump/01.png);
+      background-size: 100% 100%;
+   }
+
+   1% {
+      background: url(../assets/img/gamePlay/player/doubleJump/02.png);
+      background-size: 100% 100%;
+   }
+
+   3% {
+      background: url(../assets/img/gamePlay/player/doubleJump/03.png);
+      background-size: 100% 100%;
+   }
+
+   5% {
+      background: url(../assets/img/gamePlay/player/doubleJump/04.png);
+      background-size: 100% 100%;
+   }
+
+   8% {
+      background: url(../assets/img/gamePlay/player/doubleJump/05.png);
+      background-size: 100% 100%;
+   }
+
+   10% {
+      background: url(../assets/img/gamePlay/player/doubleJump/06.png);
+      background-size: 100% 100%;
+   }
+
+   15% {
+      background: url(../assets/img/gamePlay/player/doubleJump/07.png);
+      background-size: 100% 100%;
+   }
+
+   20% {
+      background: url(../assets/img/gamePlay/player/doubleJump/08.png);
+      background-size: 100% 100%;
+   }
+
+   25% {
+      background: url(../assets/img/gamePlay/player/doubleJump/09.png);
+      background-size: 100% 100%;
+   }
+
+   30% {
+      background: url(../assets/img/gamePlay/player/doubleJump/10.png);
+      background-size: 100% 100%;
+   }
+
+   35% {
+      background: url(../assets/img/gamePlay/player/doubleJump/11.png);
+      background-size: 100% 100%;
+   }
+
+   40% {
+      background: url(../assets/img/gamePlay/player/doubleJump/12.png);
+      background-size: 100% 100%;
+   }
+
+   45% {
+      background: url(../assets/img/gamePlay/player/doubleJump/13.png);
+      background-size: 100% 100%;
+   }
+
+   50% {
+      background: url(../assets/img/gamePlay/player/doubleJump/14.png);
+      background-size: 100% 100%;
+   }
+
+   55% {
+      background: url(../assets/img/gamePlay/player/doubleJump/15.png);
+      background-size: 100% 100%;
+   }
+
+   60% {
+      background: url(../assets/img/gamePlay/player/doubleJump/16.png);
+      background-size: 100% 100%;
+   }
+
+   63% {
+      background: url(../assets/img/gamePlay/player/doubleJump/17.png);
+      background-size: 100% 100%;
+   }
+
+   65% {
+      background: url(../assets/img/gamePlay/player/doubleJump/18.png);
+      background-size: 100% 100%;
+   }
+
+   70% {
+      background: url(../assets/img/gamePlay/player/doubleJump/19.png);
+      background-size: 100% 100%;
+   }
+
+
+   73% {
+      background: url(../assets/img/gamePlay/player/doubleJump/20.png);
+      background-size: 100% 100%;
+   }
+
+   75% {
+      background: url(../assets/img/gamePlay/player/doubleJump/21.png);
+      background-size: 100% 100%;
+   }
+
+   80% {
+      background: url(../assets/img/gamePlay/player/doubleJump/22.png);
+      background-size: 100% 100%;
+   }
+
+   83% {
+      background: url(../assets/img/gamePlay/player/doubleJump/23.png);
+      background-size: 100% 100%;
+   }
+
+   85% {
+      background: url(../assets/img/gamePlay/player/doubleJump/24.png);
+      background-size: 100% 100%;
+   }
+
+   90% {
+      background: url(../assets/img/gamePlay/player/doubleJump/25.png);
+      background-size: 100% 100%;
+   }
+
+   93% {
+      background: url(../assets/img/gamePlay/player/doubleJump/26.png);
+      background-size: 100% 100%;
+   }
+
+   95% {
+      background: url(../assets/img/gamePlay/player/doubleJump/27.png);
+      background-size: 100% 100%;
+   }
+
+   98% {
+      background: url(../assets/img/gamePlay/player/doubleJump/28.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background: url(../assets/img/gamePlay/player/doubleJump/29.png);
+      background-size: 100% 100%;
+   }
+
+}
+
+@keyframes doubleJumpDelayAnim {
+   0% {
+      transform: translate(0px, 0px);
+   }
+
+   50% {
+      transform: translate(0px, -300px);
+   }
+
+   100% {
+      transform: translate(0px, 0px);
+   }
+}
+
+/*   player double jump end */
+/* fast kill */
+.fastKillRight {
+   animation: fastKillRightAnim 0.5s linear;
+}
+
+@keyframes fastKillRightAnim {
+   0% {
+      background: url(../assets/img/gamePlay/player/fastKillRight/01.png);
+      background-size: 100% 100%;
+      width: 150px;
+   }
+
+   10% {
+      background: url(../assets/img/gamePlay/player/fastKillRight/02.png);
+      background-size: 100% 100%;
+      width: 150px;
+   }
+
+   30% {
+      background: url(../assets/img/gamePlay/player/fastKillRight/03.png);
+      background-size: 100% 100%;
+      width: 150px;
+   }
+
+   50% {
+      background: url(../assets/img/gamePlay/player/fastKillRight/04.png);
+      background-size: 100% 100%;
+      width: 150px;
+   }
+
+   70% {
+      background: url(../assets/img/gamePlay/player/fastKillRight/05.png);
+      background-size: 100% 100%;
+      width: 150px;
+   }
+
+   90% {
+      background: url(../assets/img/gamePlay/player/fastKillRight/06.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background: url(../assets/img/gamePlay/player/fastKillRight/07.png);
+      background-size: 100% 100%;
+   }
+
+}
+
+.fastKillLeft {
+   animation: fastKillLeftAnim 0.5s linear;
+}
+
+@keyframes fastKillLeftAnim {
+   0% {
+      background: url(../assets/img/gamePlay/player/fastKillLeft/01.png);
+      background-size: 100% 100%;
+      width: 150px;
+   }
+
+   10% {
+      background: url(../assets/img/gamePlay/player/fastKillLeft/02.png);
+      background-size: 100% 100%;
+      width: 150px;
+   }
+
+   30% {
+      background: url(../assets/img/gamePlay/player/fastKillLeft/03.png);
+      background-size: 100% 100%;
+      width: 150px;
+   }
+
+   50% {
+      background: url(../assets/img/gamePlay/player/fastKillLeft/04.png);
+      background-size: 100% 100%;
+      width: 150px;
+   }
+
+   70% {
+      background: url(../assets/img/gamePlay/player/fastKillLeft/05.png);
+      background-size: 100% 100%;
+      width: 150px;
+   }
+
+   90% {
+      background: url(../assets/img/gamePlay/player/fastKillLeft/06.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background: url(../assets/img/gamePlay/player/fastKillLeft/07.png);
+      background-size: 100% 100%;
+   }
+
+}
+
+.progressDown {
+   animation: progressDownAnim 5s linear;
+}
+
+@keyframes progressDownAnim {
+   0% {
+      width: 100%;
+   }
+
+   100% {
+      width: 0%;
+   }
+}
+
+.pauseAnim {
+   animation-play-state: paused !important;
+}
+
+.hidePlayer {
+   animation: hidePlayerAnim 1s linear reverse;
+}
+
+@keyframes hidePlayerAnim {
+   0% {
+      background: url(../assets/img/gamePlay/player/hide/01.png);
+      background-size: 100% 100%;
+   }
+
+   10% {
+      background: url(../assets/img/gamePlay/player/hide/02.png);
+      background-size: 100% 100%;
+   }
+
+   20% {
+      background: url(../assets/img/gamePlay/player/hide/03.png);
+      background-size: 100% 100%;
+   }
+
+   25% {
+      background: url(../assets/img/gamePlay/player/hide/04.png);
+      background-size: 100% 100%;
+   }
+
+   30% {
+      background: url(../assets/img/gamePlay/player/hide/05.png);
+      background-size: 100% 100%;
+   }
+
+   40% {
+      background: url(../assets/img/gamePlay/player/hide/06.png);
+      background-size: 100% 100%;
+   }
+
+   45% {
+      background: url(../assets/img/gamePlay/player/hide/07.png);
+      background-size: 100% 100%;
+   }
+
+   50% {
+      background: url(../assets/img/gamePlay/player/hide/08.png);
+      background-size: 100% 100%;
+   }
+
+   60% {
+      background: url(../assets/img/gamePlay/player/hide/09.png);
+      background-size: 100% 100%;
+   }
+
+   65% {
+      background: url(../assets/img/gamePlay/player/hide/10.png);
+      background-size: 100% 100%;
+   }
+
+   70% {
+      background: url(../assets/img/gamePlay/player/hide/11.png);
+      background-size: 100% 100%;
+   }
+
+   80% {
+      background: url(../assets/img/gamePlay/player/hide/12.png);
+      background-size: 100% 100%;
+   }
+
+   90% {
+      background: url(../assets/img/gamePlay/player/hide/13.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background: url(../assets/img/gamePlay/player/hide/14.png);
+      background-size: 100% 100%;
+   }
+}
+
+/* throw shuriken */
+.playerThrowShurikenRight {
+   animation: playerThrowShurikenRightAnim 0.2s linear normal;
+}
+
+@keyframes playerThrowShurikenRightAnim {
+   0% {
+      background: url(../assets/img/gamePlay/player/throwShurikenRight/01.png);
+      background-size: 100% 100%;
+   }
+
+   50% {
+      background: url(../assets/img/gamePlay/player/throwShurikenRight/02.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background: url(../assets/img/gamePlay/player/throwShurikenRight/03.png);
+      background-size: 100% 100%;
+   }
+}
+
+.playerThrowShurikenLeft {
+   animation: playerThrowShurikenLeftAnim 0.2s linear normal;
+}
+
+@keyframes playerThrowShurikenLeftAnim {
+   0% {
+      background: url(../assets/img/gamePlay/player/throwShurikenLeft/01.png);
+      background-size: 100% 100%;
+   }
+
+   50% {
+      background: url(../assets/img/gamePlay/player/throwShurikenLeft/02.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background: url(../assets/img/gamePlay/player/throwShurikenLeft/03.png);
+      background-size: 100% 100%;
+   }
+}
+
+.throwShurikenRight {
+   animation: throwShurikenRightAnim 0.4s linear forwards;
+}
+
+@keyframes throwShurikenRightAnim {
+   0% {
+      transform: rotate(0deg);
+      left: 20px;
+   }
+
+   30% {
+      transform: rotate(90deg);
+   }
+
+   60% {
+      transform: rotate(180deg);
+   }
+
+   90% {
+      transform: rotate(270deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+      left: 350px;
+   }
+}
+
+.throwShurikenLeft {
+   animation: throwShurikenLeftAnim 0.4s linear forwards;
+}
+
+@keyframes throwShurikenLeftAnim {
+   0% {
+      transform: rotate(0deg);
+      left: 20px;
+   }
+
+   30% {
+      transform: rotate(90deg);
+   }
+
+   60% {
+      transform: rotate(180deg);
+   }
+
+   90% {
+      transform: rotate(270deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+      left: -350px;
+   }
+}
+
+.enemyWalk {
+   animation: enemyWalkAnim 3s linear infinite alternate;
+}
+
+.enemyFlip {
+   transform: scaleX(-1);
+}
+
+@keyframes enemyWalkAnim {
+   0% {
+      background: url(../assets/img/gamePlay/enemy/walk/01.png);
+      background-size: 100% 100%;
+      left: 85%;
+   }
+
+   5% {
+      background: url(../assets/img/gamePlay/enemy/walk/02.png);
+      background-size: 100% 100%;
+   }
+
+   10% {
+      background: url(../assets/img/gamePlay/enemy/walk/03.png);
+      background-size: 100% 100%;
+   }
+
+   15% {
+      background: url(../assets/img/gamePlay/enemy/walk/04.png);
+      background-size: 100% 100%;
+   }
+
+   20% {
+      background: url(../assets/img/gamePlay/enemy/walk/05.png);
+      background-size: 100% 100%;
+   }
+
+   30% {
+      background: url(../assets/img/gamePlay/enemy/walk/06.png);
+      background-size: 100% 100%;
+   }
+
+   40% {
+      background: url(../assets/img/gamePlay/enemy/walk/07.png);
+      background-size: 100% 100%;
+   }
+
+   50% {
+      background: url(../assets/img/gamePlay/enemy/walk/08.png);
+      background-size: 100% 100%;
+   }
+
+   60% {
+      background: url(../assets/img/gamePlay/enemy/walk/09.png);
+      background-size: 100% 100%;
+   }
+
+   70% {
+      background: url(../assets/img/gamePlay/enemy/walk/10.png);
+      background-size: 100% 100%;
+   }
+
+   80% {
+      background: url(../assets/img/gamePlay/enemy/walk/11.png);
+      background-size: 100% 100%;
+   }
+
+   90% {
+      background: url(../assets/img/gamePlay/enemy/walk/12.png);
+      background-size: 100% 100%;
+   }
+
+   95% {
+      background: url(../assets/img/gamePlay/enemy/walk/13.png);
+      background-size: 100% 100%;
+   }
+
+   100% {
+      background: url(../assets/img/gamePlay/enemy/walk/14.png);
+      background-size: 100% 100%;
+      left: 82%;
+   }
+
+}

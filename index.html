@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/gameplay.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+    <title>Ninja Arashi 2</title>
+</head>
+
+<body>
+    <audio src="assets/sounds/intro.mp3" id="introSound"></audio>
+    <audio src="assets/sounds/click.mp3" id="clickSound"></audio>
+    <audio src="assets/sounds/wind.mp3" id="windSound"></audio>
+    <audio src="assets/sounds/gamePlayMusic.mp3" id="gamePlayMusic"></audio>
+    <audio src="assets/sounds/dead.mp3" id="deadSound"></audio>
+    <audio src="assets/sounds/walk.mp3" id="walkSound"></audio>
+    <audio src="assets/sounds/jump.mp3" id="jumpSound"></audio>
+    <audio src="assets/sounds/loadingVahid.mp3" id="loadingSound"></audio>
+    <audio src="assets/sounds/fastKill.mp3" id="fastKillSound"></audio>
+    <audio src="assets/sounds/hideAndShow.mp3" id="hideShowSound"></audio>
+    <audio src="assets/sounds/shuriken.mp3" id="shurikenSound"></audio>
+    <audio src="assets/sounds/ending.mp3" id="endSound"></audio>
+    <audio src="assets/sounds/star.mp3" id="starSound"></audio>
+
+    <!-- game scene -->
+    <div id="gameScene">
+        <!-- intro scene -->
+        <div id="introScene" class="">
+            <div id="play" class="scale"></div>
+        </div>
+        <!-- intro scene end -->
+        <!-- intro video -->
+        <div id="introVideoHolder" class="hide">
+            <video src="assets/video/intro.mp4" id="introVideo"></video>
+            <span class="skip">Click On The Screen To Skip</span>
+        </div>
+        <!-- intro video end -->
+        <!-- home -->
+        <div id="home" class="">
+            <!-- home back Btn -->
+            <div id="homeBtn" class="scale hide"></div>
+            <!-- home back Btn end -->
+            <!-- top -->
+            <div class="top"><span class="coin">0</span><span class="gem">0</span></div>
+            <!-- top end -->
+            <!-- left -->
+            <div class="left">
+                <div id="homeSettingBtn" class="scale" onclick="meniItemSound(0),settingHideShow()"></div>
+                <div id="infoBtn" class="scale" onclick="meniItemSound(1),infoHideShow()"></div>
+                <div id="rateUsBtn" class="scale" onclick="meniItemSound(2)"></div>
+            </div>
+            <!-- left end -->
+            <!-- right -->
+            <div class="right">
+                <div id="storyBtn" class="scale"></div>
+                <div id="skillsBtn" class="scale"></div>
+                <div id="shopBtn" class="scale"></div>
+                <div id="artifactBtn" class="scale"></div>
+                <div id="challengeBtn" class="scale"></div>
+            </div>
+            <!-- right end -->
+            <!-- setting menu -->
+            <div id="setting" class="home-menu hide">
+                <div id="settingMenu">
+                    <div id="musicBtn" class="scale" onclick="meniItemSound(3)"></div>
+                    <div id="resetBtn" class="scale" onclick="meniItemSound(4)"></div>
+                    <div id="addSetiingBtn" class="scale" onclick="meniItemSound(5)"></div>
+                    <div id="privacyBtn" class="scale" onclick="meniItemSound(6)"></div>
+                    <div id="closeBtn" class="scale" onclick="meniItemSound(7),settingHideShow()"></div>
+                </div>
+            </div>
+            <!-- setting menu end -->
+            <!-- info menu -->
+            <div id="info" class="home-menu hide">
+                <div id="infoMenu">
+                    <div id="infoCloseBtn" class="scale" onclick="meniItemSound(8),infoHideShow()"></div>
+                </div>
+            </div>
+            <!-- info menu end -->
+            <!-- story -->
+            <div id="story" class="home-menu hide">
+                <div class="holder">
+                    <!-- btn group -->
+                    <div class="btn-group">
+                        <div id="sliderBtnLeft" class="scale"></div>
+                        <div id="sliderBtnRight" class="scale"></div>
+                    </div>
+                    <!-- btn group end -->
+                    <!-- top -->
+                    <div class="top">
+                        <!-- act -->
+                        <div id="act">ACT 1</div>
+                        <!-- achivement -->
+                        <div id="achievement">
+                            <span id="star">0/240</span><span id="gold">0/8</span>
+                        </div>
+                    </div>
+                    <!-- top end -->
+                    <!-- imgSlider -->
+                    <div id="imgSlider">
+                        <ul id="imgGallery">
+                            <li class="item"><img src="assets/img/home/story/bg1.png" alt=""></li>
+                            <li class="item"><img src="assets/img/home/story/bg2.png" alt=""></li>
+                            <li class="item"><img src="assets/img/home/story/bg3.png" alt=""></li>
+                            <li class="item"><img src="assets/img/home/story/bg4.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- imgSlider end -->
+                    <!-- levelSlider -->
+                    <div id="levelSlider">
+                        <div id="levelGallery">
+                            <ul class="leve-list">
+                                <li class="level-item scale level1" id="gameLevel1"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                            </ul>
+                            <ul class="leve-list">
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                            </ul>
+                            <ul class="leve-list">
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                            </ul>
+                            <ul class="leve-list">
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                                <li class="level-item scale"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- levelSlider end -->
+                </div>
+            </div>
+            <!-- story end -->
+            <!-- artifact -->
+            <div id="artifact" class="home-menu hide">
+            </div>
+            <!-- artifact end-->
+            <!-- shop -->
+            <div id="shop" class="home-menu hide">
+            </div>
+            <!-- shop end-->
+            <!-- skills -->
+            <div id="skills" class="home-menu hide">
+            </div>
+            <!-- skills end-->
+        </div>
+        <!-- home end -->
+        <!-- gameplay -->
+        <div id="gamePlay" class="hide">
+            <div class="loading" id="loading2">
+                <div class="preLoader">
+                </div>
+            </div>
+            <!-- play ground -->
+            <div id="playGround">
+                <div id="stage1" class="">
+                    <div id="star1" class="star"></div>
+                    <div id="star2" class="star"></div>
+                    <div id="star3" class="star"></div>
+                    <div id="enemy1" class="breath enemyWalk"></div>
+                </div>
+
+                <div id="player" class="breath">
+                    <div id="shuriken" class="hide"></div>
+                </div>
+            </div>
+            <!-- hide and show loading -->
+            <div id="hsProgress" class="hide">
+                <div id="hsBar"></div>
+            </div>
+            <!-- hide and show loading end -->
+            <!-- player info -->
+            <div id="playerInfo" class="gameActionBtn">
+                <span id="lifeNum"></span>
+                <span id="starNum"></span>
+                <span id="coinNum"></span>
+            </div>
+            <!-- player info end -->
+            <!-- setting btn -->
+            <div id="gameSettingBtn" class="gameActionBtn scale" onclick="gameMenuHideShow()"></div>
+            <!-- setting btn end -->
+            <!-- player move -->
+            <div id="playerMove" class="gameActionBtn">
+                <div id="goLeft" class="scale"></div>
+                <div id="goRight" class="scale"></div>
+            </div>
+            <!-- player move end -->
+            <!-- player actions -->
+            <ul id="playerActions" class="gameActionBtn">
+                <li id="hideShowBtn" class="scale"></li>
+                <li id="killBtn" class="scale"></li>
+                <li id="fastKillBtn" class="scale"></li>
+                <li id="jumpBtn" class="scale"></li>
+            </ul>
+            <!-- player actions end -->
+            <!-- game setting menu -->
+            <div id="menuHolder" class="hide">
+                <!-- setting menu -->
+                <ul id="gameSettingMenu" class="hide">
+                    <li id="resumeBtn" class="item scale" onclick="gameMenuHideShow()"></li>
+                    <li id="restartBtn" class="item scale" onclick="restartGame()"></li>
+                    <li id="gameMusicBtn" class="item scale"></li>
+                    <li id="hideUiBtn" class="item scale"></li>
+                    <li id="mainMenuBtn" class="item scale"></li>
+                </ul>
+                <!-- dead menu -->
+                <ul id="deadMenu" class="hide">
+                    <li id="restartBtn2" class="item scale" onclick="restartGame()"></li>
+                    <li id="mainMenuBtn2" class="item scale"></li>
+                    <li id="buyDiamonds" class="item scale"></li>
+                </ul>
+                <!-- finish menu -->
+                <ul id="finishMenu" class="hide">
+                    <li id="nextStageBtn" class="item scale"></li>
+                    <li id="restartBtn3" class="item scale" onclick="restartGame()"></li>
+                    <li id="mainMenuBtn2" class="item scale"></li>
+                </ul>
+            </div>
+            <!-- game setting menu end -->
+        </div>
+        <!-- gameplay end -->
+    </div>
+    <!-- game scene end -->
+</body>
+
+<script src="js/main.js"></script>
+<script src="js/playerActions.js"></script>
+<script src="js/colision.js"></script>
+<script src="js/enemyActions.js"></script>
+
+</html>
